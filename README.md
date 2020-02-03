@@ -1,4 +1,7 @@
-## Michael Schwarzbach's Personal Website
-# Built with React.js & Flask
+# Michael Schwarzbach's Personal Website
+### Built with React.js & Flask
 
-> displays personal information and projects
+#### Showcases the following:
+* personal information
+* projects
+* fun facts
