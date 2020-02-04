@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html{
+  height: 100%;
+}
+body {
+  width: 100%;
+  min-height: 100%;
+}
+#root{
+  height:100vh;
+}
+.App{
+  height:100vh;
+  display: flex;
+  flex-flow: column;
+}
+#navbar{
+  border-bottom: 3px solid #a494ff;
+  padding: 1rem;
+  background: rgb(25, 25, 25);
+  height: 87px;
+}
+.main{
+  background: rgb(40, 40, 40);
+  width: 100%;
+  flex-grow : 1;
+}
+
+#intro{
+  background-image: url("images/pensive.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+#me{
+  height:450px;
+  width:700px;
+}
+
+.navLink{
+  color: rgb(204, 172, 235);
+}
+
+
+
+/* #home{
+  height:1080px;
+  background: url('images/sunset.jpg') no-repeat;
+  background-size: 85% 100%;
+  background-position: center;
+} */

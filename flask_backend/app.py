@@ -4,6 +4,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return 'Welcome to Michael Schwarzbach\'s website'
+    #return flask.render_template("index.html", token="Hello Friend")
 
 @app.route('/projects/', methods=['GET', 'POST'])
 def projects(request):
