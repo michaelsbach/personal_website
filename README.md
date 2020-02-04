@@ -4,4 +4,10 @@
 #### Showcases the following:
 * personal information
 * projects
-* fun facts
+* creativity corner, with writings and videos
+
+
+#### to run:
+* create a venv for the backend
+* npm run start for the frontend 
+* the goal is to have this project hosted soon using DigitalOcean
