@@ -4,6 +4,8 @@ __pycache__/
 venv/
 .env
 .venv
+templates/
+build_assets/
 
 # FRONTEND
 # dependencies
