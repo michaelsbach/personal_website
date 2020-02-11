@@ -1,25 +1,32 @@
 from flask import Flask
+from flask import request
+from flask import render_template
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Welcome to Michael Schwarzbach\'s website'
-    #return flask.render_template("index.html", token="Hello Friend")
+    return render_template("index.html", token="Hello Friend")
 
-@app.route('/projects/', methods=['GET', 'POST'])
-def projects(request):
-    if request.method == 'POST':
-        return add_project()
-    elif request.method == 'GET':
-        return display_projects()
+'''
+    display_projects:
+        method that renders React front-end. 
+        The front end will query the backend at /api/projects 
+            and populate view of projects with the fetched data
 
-
+'''
 def display_projects():
     return 'List of Projects'
 
-def add_project():
-    #TODO: add project info to DB
-    return 'success or fail?'
+
+
+@app.route('/projects/', methods=['GET', 'POST'])
+def projects():
+    if request.method == 'GET':
+        return display_projects()
+    else:
+        return add_project()
+
+
 
 @app.route('/projects/<int:project_id>', methods=['GET', 'PUT', 'PATCH', 'DELETE'])
 def project(project_id):
@@ -27,5 +34,17 @@ def project(project_id):
 #    return render_template('project.html', project=project)
 
 
+'''
+TODO METHOD: OPTIONAL
+    add_project:
+        would need a login system for this. 
+        Needs to authenticate me first. Should look into google OAuth.
+        method that renders React front-end. 
+        The front end will show a form so that a new project (with picture & info) can be added. 
+        Form data will be POSTed to /projects/
+
+'''
+def add_project():
+    return '404 add_project not implemented'
 
 #@app.route('/')
