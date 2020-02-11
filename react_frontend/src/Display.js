@@ -12,6 +12,7 @@ return(
     <Row className="justify-content-md-center">
         <Col xs={8}>
         <Jumbotron id="intro">
+        <p>{window.token}</p>
         <h1>Hi, I'm Michael.</h1>
         <div id="me" className="pt-3">
         </div>
