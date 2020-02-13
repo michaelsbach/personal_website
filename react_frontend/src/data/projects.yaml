@@ -1,0 +1,23 @@
+projects:
+  - title: Website
+    url: https://www.michaelschwarzbach.me
+    description: My personal portfolio website made to highlight me and my qualifications, while also highlighting my programming skills through the development itself.
+    tech:
+      - React.js
+      - Flask (Python)
+      - nginx
+      - Travis CI
+      - Digital Ocean
+  - title: Raytracing
+    url: null
+    description: I have been interested in 3D graphics recently, so this project is a good way to explore that
+    tech: null
+  
+  - title: RowdyHacks 2019
+    url: https://devpost.com/software/prismfinder
+    description: This was my second hackathon participation. Our team built a virtual augmented reality (VAR) "game" with Unity and won 3rd place. I was responsible for generating 2D polygonal shapes using C# and creating 3D fractal objects in Blender using the 2D shapes.
+    tech:
+      - Unity
+      - C#
+      - Oculus
+      - Blender
