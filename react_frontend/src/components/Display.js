@@ -3,14 +3,14 @@ import Col from 'react-bootstrap/Col'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import React from 'react';
 import Container from 'react-bootstrap/Container'
-import './App.css';
+import './components.css';
 
 
 function Display(){
 return(
 <Container fluid id="home" className="main pt-5">
     <Row className="justify-content-md-center">
-        <Col xs={8}>
+        <Col>
         <Jumbotron id="intro">
         <p>{window.token}</p>
         <h1>Hi, I'm Michael.</h1>

@@ -1,0 +1,39 @@
+#navbar{
+    border-bottom: 3px solid #a494ff;
+    padding: 1rem;
+    background: rgb(25, 25, 25);
+    height: 87px;
+  }
+  .main{
+    background: rgb(40, 40, 40);
+    width: 100%;
+    flex-grow : 1;
+  }
+  
+  #intro{
+    background-image: url("../images/pensive.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #333333;
+    text-align: center;
+  }
+  
+  #me{
+    height:450px;
+    width:700px;
+  }
+  
+  .navLink{
+    color: rgb(204, 172, 235);
+  }
+  
+  
+  
+  /* #home{
+    height:1080px;
+    background: url('../images/sunset.jpg') no-repeat;
+    background-size: 85% 100%;
+    background-position: center;
+  } */
