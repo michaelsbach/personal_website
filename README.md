@@ -1,5 +1,5 @@
 # Michael Schwarzbach's Personal Website
-### Built with React.js, Flask, SQLAlchemy, Travis
+### Built with React.js, Flask, nginx, DigitalOcean, & Travis CI
 
 #### Showcases the following:
 * personal information
@@ -18,4 +18,4 @@
 
 ## TODO back-end:
  * set up routes for "contact me", "art"
- * set up SQLAlchemy Database
+ * populate frontend with data from projects.yaml
