@@ -3,6 +3,7 @@
     padding: 1rem;
     background: rgb(25, 25, 25);
     height: 87px;
+    text-align: center;
   }
   .main{
     background: rgb(40, 40, 40);
@@ -17,23 +18,60 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-color: #333333;
-    text-align: center;
+    border-radius: 0em;
+    padding: 5rem 2rem 7rem 2rem;
+    min-height: 600px;
+  }
+
+
+  .intro_greeting{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+
+  .intro_subtitle{
+    font-size: 1.5rem;
+    max-width: 500px;
+  }
+
+  p.intro_about_me{
+    line-height: 4rem;
+    margin-bottom: 0rem;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+  }
+
+  @media screen and (max-width: 600px) {
+    p.intro_about_me {
+      line-height: 3rem;
+      font-size: 20px;
+    }
   }
   
   #me{
-    height:450px;
-    width:700px;
+    border: lime dotted 1px;
   }
   
   .navLink{
     color: rgb(204, 172, 235);
   }
+/*   
+  .fab.github:hover {
+    color: rgb(7, 71, 166);
+  }
   
+  a.fab.linkedin:hover {
+    color: #0077b5;
+  }
   
+  a.fab.hackerrank:hover {
+    color: #1ba94c;
+  }
   
-  /* #home{
-    height:1080px;
-    background: url('../images/sunset.jpg') no-repeat;
-    background-size: 85% 100%;
-    background-position: center;
-  } */
+  a.fas.envelope:hover {
+    color: rgb(224, 76, 64);
+  }
+ */

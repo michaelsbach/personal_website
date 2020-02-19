@@ -8,7 +8,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template("index.html", token="Hello Friend")
+    return render_template("index.html")
+    #can pass a token in above statment with (..., token="content")
+    #index.html can pick up the token with <script>window.token="{{token}}"</script>
+    #remaining views can reference token with {{window.token}}
 
 '''
     display_projects:

@@ -1,21 +1,27 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import Display from './components/Display';
+import Home from './components/Home';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import { BrowserRouter as Router, Route } from "react-router-dom"
+// import ReactGA from "react-ga"
+
 
 
 
 
 function App() {
   return (
-  <div className="App">
-    <NavBar>
-
-    </NavBar>
-    <Display>
-
-    </Display>
-  </div>
+    <Router>
+      <div className="App">
+        <NavBar></NavBar>
+        <Route exact path='/' component={Home} /> 
+        {/* rename to Home */}
+        <Route path='/projects' component={Projects} /> 
+        <Route path='/contact' component={Contact} /> 
+      </div>
+    </Router>
   );
 }
 

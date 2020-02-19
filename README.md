@@ -13,9 +13,13 @@
 * the goal is to have this project hosted soon using DigitalOcean
 
 
-## TODO front-end:
- * add code for adjusting layout & columns upon resizing viewport
-
-## TODO back-end:
- * set up routes for "contact me", "art"
- * populate frontend with data from projects.yaml
+ #### TODO:
+  * put information on homepage
+  * set up components/views for "contact" page (need icons for GTHB, LNKDN, GML)
+  * set up components/views for "projects" page (should use React Cards, grab data from the projects.yaml)
+  * set up "WIP" for "art" page
+  * fix layout re-rendering column size (currently, xs={6} takes up the first 6 cols. how to take middle 6 cols?)
+  * set up cool SVG animation on home screen (maybe create art to do this)
+  * set up pytest suite
+  * set up travis CI
+  * set up nginx & DigitalOcean hosting

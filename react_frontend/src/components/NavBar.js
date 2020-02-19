@@ -15,13 +15,10 @@ return (
             <a href="/"><h4 className="navLink" >Home</h4></a>
         </Col>
 
-        <Col xs={1}>
+        <Col xs={3}>
             <a href="/projects"><h4 className="navLink" >Projects</h4></a>
         </Col>
-        <Col xs={1}>
-            <a href="/art"><h4 className="navLink" >Art</h4></a>
-        </Col>
-        <Col xs={1}>
+        <Col xs={3}>
             <a href="/contact"><h4 className="navLink" >Contact</h4></a>
         </Col>
     </Row>

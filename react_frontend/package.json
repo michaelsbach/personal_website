@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "/static/build_assets",
+  "homepage": "/static/build_assets",
   "dependencies": {
     "@babel/core": "7.8.4",
     "@svgr/webpack": "4.3.3",
@@ -51,6 +51,8 @@
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dev-utils": "^10.1.0",
     "react-dom": "^16.12.0",
+    "react-ga": "^2.7.0",
+    "react-router-dom": "^5.1.2",
     "resolve": "1.15.0",
     "resolve-url-loader": "3.1.1",
     "sass-loader": "8.0.2",
