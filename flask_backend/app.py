@@ -38,4 +38,6 @@ def projects():
 
 
 
-#@app.route('/')
+@app.route('/contact/')
+def contact():
+    return render_template("index.html")
