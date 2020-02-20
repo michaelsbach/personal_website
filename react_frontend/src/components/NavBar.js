@@ -12,14 +12,14 @@ return (
 <Container fluid id="navbar">
     <Row className="justify-content-center py-2"> 
         <Col xs={5} className="text-left">
-            <a href="/"><h4 className="navLink" >Home</h4></a>
+            <h4><a href="/" className="navLink" >Home</a></h4>
         </Col>
 
         <Col xs={3}>
-            <a href="/projects"><h4 className="navLink" >Projects</h4></a>
+            <h4><a href="/projects" className="navLink" >Projects</a></h4>
         </Col>
         <Col xs={3}>
-            <a href="/contact"><h4 className="navLink" >Contact</h4></a>
+            <h4><a href="/contact" className="navLink" >Contact</a></h4>
         </Col>
     </Row>
 </Container>

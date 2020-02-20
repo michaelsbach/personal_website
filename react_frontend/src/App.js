@@ -15,9 +15,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <NavBar></NavBar>
+        <NavBar/>
         <Route exact path='/' component={Home} /> 
-        {/* rename to Home */}
         <Route path='/projects' component={Projects} /> 
         <Route path='/contact' component={Contact} /> 
       </div>

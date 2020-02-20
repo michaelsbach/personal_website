@@ -25,10 +25,10 @@ return(
                 </Jumbotron>
             </Col>
         </Row>
+        <Row>
+            <AboutMe/>
+        </Row>
     </div>
-
-    {/* <AboutMe/> */}
-
 
 </Container>
 
