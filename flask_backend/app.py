@@ -1,6 +1,8 @@
 from flask import Flask
 from flask import request
 from flask import render_template
+import json
+import yaml
 app = Flask(__name__)
 # app.config.from_object('config.ProductionConfig')
 # app.config.from_object('config.TestingConfig')
@@ -13,44 +15,27 @@ def index():
     #index.html can pick up the token with <script>window.token="{{token}}"</script>
     #remaining views can reference token with {{window.token}}
 
+@app.route('/api/projects/')
+def api_projects():
+    with open("data/projects.yaml", 'r') as stream:
+        try:
+            return json.dumps(yaml.safe_load(stream))
+        except yaml.YAMLError as err:
+            return json.dumps({"ERROR": err})
+
+
+
 '''
-    display_projects:
+    projects:
         method that renders React front-end. 
         The front end will query the backend at /api/projects 
             and populate view of projects with the fetched data
 
 '''
-def display_projects():
-    return 'List of Projects'
-
-
-
-@app.route('/projects/', methods=['GET', 'POST'])
+@app.route('/projects/')
 def projects():
-    if request.method == 'GET':
-        return display_projects()
-    else:
-        return add_project()
+    return render_template("index.html")
 
 
-
-@app.route('/projects/<int:project_id>', methods=['GET', 'PUT', 'PATCH', 'DELETE'])
-def project(project_id):
-    return f'Details about project #{project_id}'
-#    return render_template('project.html', project=project)
-
-
-'''
-TODO METHOD: OPTIONAL
-    add_project:
-        would need a login system for this. 
-        Needs to authenticate me first. Should look into google OAuth.
-        method that renders React front-end. 
-        The front end will show a form so that a new project (with picture & info) can be added. 
-        Form data will be POSTed to /projects/
-
-'''
-def add_project():
-    return '404 add_project not implemented'
 
 #@app.route('/')

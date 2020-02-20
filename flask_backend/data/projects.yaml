@@ -2,20 +2,31 @@ projects:
   - title: Website
     url: https://www.michaelschwarzbach.me
     description: My personal portfolio website made to highlight me and my qualifications, while also highlighting my programming skills through the development itself.
+    timeline: February 2020
     tech:
       - React.js
       - Flask (Python)
       - nginx
       - Travis CI
       - Digital Ocean
+
+  - title: Endless Scroll
+    url: null #https://www.michaelschwarzbach.me/scroll
+    description: A quick project using an already exisiting API
+    timeline: null
+    tech: []
+
+  
   - title: Raytracing
     url: null
-    description: I have been interested in 3D graphics recently, so this project is a good way to explore that
-    tech: null
+    description: I loved my Linear Algebra class and have been interested in Raytracing, so this project would be a good way to explore those interests as well as 3D graphics.
+    timeline: Late 2020
+    tech: []
   
   - title: RowdyHacks 2019
     url: https://devpost.com/software/prismfinder
     description: This was my second hackathon participation. Our team built a virtual augmented reality (VAR) "game" with Unity and won 3rd place. I was responsible for generating 2D polygonal shapes using C# and creating 3D fractal objects in Blender using the 2D shapes.
+    timeline: April 2019
     tech:
       - Unity
       - C#

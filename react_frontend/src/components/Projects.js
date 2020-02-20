@@ -1,20 +1,32 @@
+import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import React from 'react';
-import Container from 'react-bootstrap/Container'
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './components.css';
+import Project from './Project';
+
 
 
 function Projects(){
-return(
 
-<div className="intro_subtitle">
-<p className="intro_about_me"> Some of my favorite technologies include Python, JS, and Vue.js</p>
-<p className="intro_about_me"> I love to learn new things.</p>
-</div>
+    const [projects, setProjects] = useState([]);
 
-);
-}
-
+    // Takes over functionality of {componentDidMount, componentDidUpdate}
+    useEffect(() => {
+            const fetchData = async() => {
+                const result = await axios("/api/projects");
+                setProjects(result.data.projects);
+            };
+            fetchData();
+    }, []);
+    
+    return (
+        <div>
+            {projects.map(proj => (
+                <Project data={proj}></Project>
+            ))}
+        </div>
+    );
+        }
 export default Projects;
