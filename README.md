@@ -17,7 +17,9 @@
   * put information on homepage
   * set up components/views for "contact" page (need icons for GTHB, LNKDN, GML)
   * set up components/views for "projects" page (should use React Cards, grab data from the projects.yaml)
-  * set up "WIP" for "art" page
+  * overhaul nav bar
+    * "Michael Schwarzbach" on >800px, "Home" on <800px
+    * Projects & Contact smaller
   * fix layout re-rendering column size (currently, xs={6} takes up the first 6 cols. how to take middle 6 cols?)
   * set up cool SVG animation on home screen (maybe create art to do this)
   * set up pytest suite
