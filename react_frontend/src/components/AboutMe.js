@@ -10,9 +10,13 @@ function AboutMe(){
 return(
 
     <Container className="text-center justify-content-center">
-            <p className="intro_about_me"> Some of my favorite technologies include Python, JS, and Vue.js</p>
-            <p className="intro_about_me"> I love to learn new things.</p>
-    </Container>
+           {/* Hello! I'm Michael, a recent grad based in Central Texas with a passion for challenges and solving problems using technology. 
+           I started learning to code about a year ago and found loving the process that went into writing even the smallest programs. 
+           I strive to always grow and improve, and learn as much as I can.
+
+            I am working on developing applications that provide intuitive user interfaces paired with efficient backend architecture. 
+            */}
+            </Container>
 
 );
 }
