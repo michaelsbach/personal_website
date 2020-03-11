@@ -9,21 +9,25 @@ import './components.css';
 function Project(props){
   console.log(props)
   return (
-    <div>
+    <React.Fragment>
         <Card>
+            <Card.Img variant="top" src={props.image}/>
             <Card.Body>
                 <Card.Title>
-                    <h3><a href={props.data.url}>{props.data.title}</a></h3>
+                    <h3><a href={props.url}>{props.title}</a></h3>
                 </Card.Title>
                 <Card.Text>
-                    {props.data.description}
+                    {props.description}
                 </Card.Text>
                 <Card.Text>
-                    {props.data.tech.map(tech => <small className="text-muted">#{tech} </small>)}
+                    {props.tech.map(tech => <small className="text-muted">#{tech} </small>)}
                 </Card.Text>
             </Card.Body>
+            <Card.Footer>
+                <small className="text-muted">{props.date}</small>
+            </Card.Footer>
         </Card>
-    </div>
+    </React.Fragment>
   );
 }
 
