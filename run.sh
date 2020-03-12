@@ -7,5 +7,6 @@ if [[ $out =~ "ERR!" ]]; then
 else
     printf "\n\n\n%s\n" "*****  RUNNING FLASK  ******"
     cd ../flask_backend
-    flask run
+    #flask run
+    gunicorn --bind 0.0.0.0:5000 wsgi:app
 fi
