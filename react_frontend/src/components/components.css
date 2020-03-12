@@ -1,3 +1,6 @@
+  
+/* NavBar */
+
 #navbar{
     border-bottom: 3px solid #a494ff;
     padding: 1rem;
@@ -5,76 +8,150 @@
     height: 80px;
     text-align: center;
   }
-  .main{
-    background: rgb(40, 40, 40);
-    width: 100%;
-    flex-grow : 1;
-  }
-  
-  #intro{
-    background-image: url("../images/pensive.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-color: #333333;
-    border-radius: 0em;
-    padding: 5rem 2rem 7rem 2rem;
-    min-height: 600px;
-  }
-
-
-  .intro_greeting{
-    font-size: 60px;
-    font-weight: 700;
-    margin-bottom: 2rem;
-  }
-
-
-  .intro_subtitle{
-    font-size: 1.5rem;
-    max-width: 500px;
-  }
-
-  p.intro_about_me{
-    line-height: 4rem;
-    margin-bottom: 0rem;
-    color: white;
-    /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
-
-  }
-
-  @media screen and (max-width: 600px) {
-    p.intro_about_me {
-      line-height: 3rem;
-      font-size: 20px;
-    }
-  }
-  
-  #me{
-    border: lime dotted 1px;
-  }
-  
   .navLink{
     color: rgb(204, 172, 235);
   }
   .navLink:hover {
     color: rgb(177, 121, 233);
   }
-/*   
-  .fab.github:hover {
-    color: rgb(7, 71, 166);
+
+
+/* Splash */
+
+  .main{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/pensive.jpg");
+    background-size: cover;
+    margin-bottom: 3em;
+    border-bottom: 5px outset #a494ff;
   }
   
-  a.fab.linkedin:hover {
-    color: #0077b5;
+  #intro{
+    max-width: 40vw;
+    margin: 4em 0em 0em 6em; /*2003*/
+  }
+
+
+  .intro_greeting{
+    font-size: 4vw;
+    padding: 0.5em 0em;
+  }
+
+
+  /* Projects */
+
+  .section{
+      width: auto;
+      /* top, horiz, bottom */
+      margin: 0em 2em 3em;
+  }
+
+  .header{
+    color: white;
+    margin-bottom: 1.2em;
+  }
+
+  .header::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 250px;
+    background-color: #a494ff;
+    position: relative;
+    top: 5px;
+  }
+
+  .section-content{
+    margin: 0 4% ;
+    color:white;
+    border-radius: 1em;
+    margin-bottom: 3em;
+  }
+
+  .card-deck{
+    margin: 0 4% 3em;
   }
   
-  a.fab.hackerrank:hover {
-    color: #1ba94c;
+  /* .projectGrid {
+    /* Center all cards */
+    /* text-align: auto; 
+    padding: 4px 4% 2rem 4%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+  }
+  .projectGrid:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  @media (min-width: 600px) {
+    .projectGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   
-  a.fas.envelope:hover {
-    color: rgb(224, 76, 64);
+  @media (min-width: 900px) {
+    .projectGrid {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
- */
+  .projectGrid-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+  } */
+
+
+  /* Contact */
+
+  #contact-div{
+    margin-bottom: 3em;
+    display: flex;
+    /* if span lines */
+    /* justify-content: space-between; */
+    justify-content: center;
+
+  }
+  
+  .contact-line{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 500px;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 38px;
+  }
+  
+  .logo-container{
+    margin-top: -10em;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #c9d1da;
+    border-radius: 2em;
+    height: 222px;
+  }
+
+  .linkedin-cover:hover ~ .linkedin{
+    fill: rgb(7, 71, 166);
+  }
+  .linkedin:hover {
+    fill: rgb(7, 71, 166);
+  }
+
+
+  .github-cover:hover ~ .github {
+    fill: purple;
+  }
+  .github:hover {
+    fill: purple;
+  }
+  
+  .email-cover:hover ~ .email {
+    fill: rgb(224, 76, 64);
+  }
+  .email:hover {
+    fill: rgb(224, 76, 64);
+  }
+

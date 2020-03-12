@@ -22,22 +22,3 @@ def api_projects():
             return json.dumps(yaml.safe_load(stream))
         except yaml.YAMLError as err:
             return json.dumps({"ERROR": err})
-
-
-
-'''
-    projects:
-        method that renders React front-end. 
-        The front end will query the backend at /api/projects 
-            and populate view of projects with the fetched data
-
-'''
-@app.route('/projects/')
-def projects():
-    return render_template("index.html")
-
-
-
-@app.route('/contact/')
-def contact():
-    return render_template("index.html")

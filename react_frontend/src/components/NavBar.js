@@ -16,10 +16,10 @@ return (
         </Col>
 
         <Col xs={3}>
-            <h4><a href="/projects" className="navLink" >Projects</a></h4>
+            <h4><a href="#contact" className="navLink" >Contact</a></h4>
         </Col>
         <Col xs={3}>
-            <h4><a href="/contact" className="navLink" >Contact</a></h4>
+            <h4><a href="#projects" className="navLink" >Projects</a></h4>
         </Col>
     </Row>
 </Container>
