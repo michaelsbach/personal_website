@@ -6,7 +6,7 @@ import Project from './Project';
 
 
 
-function Projects(){
+function Projects(props){
 
     const [projects, setProjects] = useState([]);
 
@@ -20,22 +20,22 @@ function Projects(){
     }, []);
     
     return (
-        <div className="section">
-        <h1 className="header"> Projects </h1>
-            {/* <div className="projectGrid"> */}
-            <CardDeck>
-                {projects.map(proj => (
-                    <Project 
-                        // image={proj.image}
-                        url={proj.url}
-                        title={proj.title}
-                        description={proj.description}
-                        tech={proj.tech}
-                        date={proj.date}
-                    />
-                ))}
-            </CardDeck>
-            {/* </div> */}
+        <div id={props.id} className="section">
+            <h1 className="header"> Projects </h1>
+                {/* <div className="projectGrid"> */}
+                <CardDeck>
+                    {projects.map(proj => (
+                        <Project 
+                            // image={proj.image}
+                            url={proj.url}
+                            title={proj.title}
+                            description={proj.description}
+                            tech={proj.tech}
+                            date={proj.date}
+                        />
+                    ))}
+                </CardDeck>
+                {/* </div> */}
         </div>
     );
         }
