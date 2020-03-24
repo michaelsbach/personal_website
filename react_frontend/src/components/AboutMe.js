@@ -2,9 +2,9 @@ import React from 'react';
 import './components.css';
 
 
-function AboutMe(){
+function AboutMe(props){
 return(
-    <div className="section">
+    <div className="section" id={props.id}>
         <h1 className="header"> About Me </h1>
         <div className="section-content">
             <h5> Hello! I'm Michael, a recent grad based in Central Texas with a passion for challenges and solving problems using technology. 

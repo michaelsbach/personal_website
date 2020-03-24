@@ -2,9 +2,9 @@ import React from 'react';
 import './components.css';
 
 
-function Contact(){
+function Contact(props){
 return(
-    <div id="contact-div">
+    <div id={props.id}>
         {/* <span className="contact-line"></span> */}
         <span className="logo-container">
             <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="5.5em" height="5.5em" 
