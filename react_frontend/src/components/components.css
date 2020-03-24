@@ -1,24 +1,62 @@
   
 /* NavBar */
 
-#navbar{
-    border-bottom: 3px solid #a494ff;
-    padding: 1rem;
+  .nav{
+    position: fixed;
+    top: 0;
+    left: 0;
     background: rgb(25, 25, 25);
-    height: 80px;
-    text-align: center;
+    height: 100px;
+    transition: height 0.3s ease;
+    border-bottom: 3px solid #a494ff;
   }
+
+  .scroll{
+    height: 75px;
+  }
+  
+  .nav-container{
+    height: 100%;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .home-nav{
+    display: flex;
+    align-items: center;
+    color: #333;
+    margin-right: 0;
+  }
+
+  .links {
+    /* border: 1px solid lime; */
+    margin-right: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    margin: 0;
+  }
+
   .navLink{
     color: rgb(204, 172, 235);
+    margin: 0 1em;
+    padding: 0.5em 1em;
   }
   .navLink:hover {
     color: rgb(177, 121, 233);
+    cursor: pointer;
   }
 
 
 /* Splash */
 
   .main{
+    padding-top: 110px;
     height: 100vh;
     width: 100%;
     background-image: url("../images/pensive.jpg");
@@ -58,8 +96,8 @@
     height: 3px;
     width: 250px;
     background-color: #a494ff;
-    position: relative;
-    top: 5px;
+    position: inherit;
+    margin-top: 4px;
   }
 
   .section-content{
@@ -71,6 +109,10 @@
 
   .card-deck{
     margin: 0 4% 3em;
+  }
+
+  .card{
+    position: inherit;
   }
   
   /* .projectGrid {
@@ -103,7 +145,7 @@
 
   /* Contact */
 
-  #contact-div{
+  #contact{
     margin-bottom: 3em;
     display: flex;
     /* if span lines */
