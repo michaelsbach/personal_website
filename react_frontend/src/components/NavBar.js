@@ -2,6 +2,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
+import { Link, animateScroll as scroll } from "react-scroll";
 import './components.css';
 
 
@@ -16,10 +17,14 @@ return (
         </Col>
 
         <Col xs={3}>
-            <h4><a href="#contact" className="navLink" >Contact</a></h4>
+            <Link to="contact" smooth={true} duration= {500}>
+                <h4 className="navLink">Contact</h4>
+            </Link>
         </Col>
         <Col xs={3}>
-            <h4><a href="#projects" className="navLink" >Projects</a></h4>
+            <Link to="projects" smooth={true} duration= {500}>
+                <h4 className="navLink">Projects</h4>
+            </Link>
         </Col>
     </Row>
 </Container>
