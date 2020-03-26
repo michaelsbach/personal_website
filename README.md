@@ -25,13 +25,19 @@
     * add "Learning" section
     * deploy server so /api routes can be hit
     * work with Travis CI
-    * fiddle with CSS for < 600px- fix:
+    * work on responsive design (especially for viewport < 600px):
       * intro text size
-      * project card wrappings)
+      * project cards
+      * hero image
     * set up more test suites
 
   * Aesthetic
+    * 404 page
+    * Footer
+    * custom favicon
+    * content placeholders
     * SVG animation on home screen
+
   
 
 
