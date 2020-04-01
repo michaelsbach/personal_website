@@ -1,8 +1,9 @@
 import CardDeck from 'react-bootstrap/CardDeck'
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './components.css';
 import Project from './Project';
+import '../components.css';
+import './index.css';
 
 
 

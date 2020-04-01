@@ -76,71 +76,37 @@
     padding: 0.5em 0em;
   }
 
-
-  /* Projects */
+  /* Main content */
 
   .section{
-      width: auto;
-      /* top, horiz, bottom */
-      margin: 0em 2em 3em;
-  }
+    width: auto;
+    /* top, horiz, bottom */
+    margin: 0em 2em 3em;
+}
 
-  .header{
-    color: white;
-    margin-bottom: 1.2em;
-  }
+.header{
+  color: white;
+  margin-bottom: 1.2em;
+}
 
-  .header::after{
-    content: "";
-    display: block;
-    height: 3px;
-    width: 250px;
-    background-color: #a494ff;
-    position: inherit;
-    margin-top: 4px;
-  }
+.header::after{
+  content: "";
+  display: block;
+  height: 3px;
+  width: 250px;
+  background-color: #a494ff;
+  position: inherit;
+  margin-top: 4px;
+}
 
-  .section-content{
-    margin: 0 4% ;
-    color:white;
-    border-radius: 1em;
-    margin-bottom: 3em;
-  }
+.section-content{
+  margin: 0 4% ;
+  color:white;
+  border-radius: 1em;
+  margin-bottom: 3em;
+}
 
-  .card-deck{
-    margin: 0 4% 3em;
-  }
 
-  .card{
-    position: inherit;
-  }
-  
-  /* .projectGrid {
-    /* Center all cards */
-    /* text-align: auto; 
-    padding: 4px 4% 2rem 4%;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 1rem;
-  }
-  .projectGrid:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  }
-  @media (min-width: 600px) {
-    .projectGrid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (min-width: 900px) {
-    .projectGrid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  .projectGrid-title {
-    font-size: 1.75rem;
-    font-weight: bold;
-  } */
 
 
   /* Contact */
