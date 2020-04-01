@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import { Link, animateScroll as scroll } from "react-scroll";
 import './components.css';
@@ -38,6 +36,11 @@ function NavBar(props){
         {
             name: "Projects",
             to: "projects",
+            offset: -75,
+        },
+        {
+            name: "Learning",
+            to: "learning",
             offset: -75,
         }
     ];

@@ -1,0 +1,43 @@
+learning:
+  - title: JavaScript
+    children:
+      - title: Closures
+        completed: True
+      - title: Generators
+        completed: False
+      - title: Promises, Async/Await, Microtasks, and the Event Loop
+        completed: False
+  - title: Web Tech
+    children:
+      - title: SCSS / Sass
+        completed: False
+      - title: CORS
+        completed: False
+      - title: Cookies
+        completed: False
+  - title: Databases/APIs
+    children:
+      - title: Postgres
+        completed: False
+      - title: Swagger
+        completed: False
+      - title: NoSQL (MongoDB)
+        completed: False
+  - title: Data Analysis
+    children:
+      - title: PySpark
+        completed: False
+      - title: Scala
+        completed: False
+      - title: Hadoop
+        completed: False
+      - title: Data Mining
+        completed: False
+  - title: Graphics Processing
+    children:
+      - title: Raytracing
+        completed: False
+      - title: Rendering
+        completed: False
+      - title: OpenFrameworks
+        completed: False

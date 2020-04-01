@@ -22,3 +22,11 @@ def api_projects():
             return json.dumps(yaml.safe_load(stream))
         except yaml.YAMLError as err:
             return json.dumps({"ERROR": err})
+
+@app.route('/api/learning/')
+def api_learning():
+    with open("data/learning.yaml", 'r') as stream:
+        try:
+            return json.dumps(yaml.safe_load(stream))
+        except yaml.YAMLError as err:
+            return json.dumps({"ERROR": err})
