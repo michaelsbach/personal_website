@@ -6,7 +6,7 @@ function Topic(props){
     console.log(props)
 return(
     <div>
-       <h3 className="topic"> {props.title} </h3>  
+       <h2 className="topic"> {props.title} </h2>  
             <ul>
                 {props.children.map(child => (
                     <li className={ child.completed ? 'strikethru' : 'child'}>
